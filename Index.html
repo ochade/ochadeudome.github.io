@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochade Udome-Onyesom | AI Safety & Data Science Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fdfdfc; /* Anthropic-esque off-white */
+            color: #1a1a1a;
+        }
+        h1, h2, h3 {
+            font-family: 'Inter', sans-serif; 
+            letter-spacing: -0.02em;
+        }
+        .serif-text {
+            font-family: 'Merriweather', serif;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="max-w-4xl mx-auto py-8 px-6 flex justify-between items-center">
+        <div class="text-xl font-bold tracking-tight">Ochade Udome-Onyesom</div>
+        <div class="space-x-6 text-sm text-gray-600">
+            <a href="#about" class="hover:text-black transition">About</a>
+            <a href="#research" class="hover:text-black transition">Research & Projects</a>
+            <a href="#current-work" class="hover:text-black transition">Current Focus</a>
+            <a href="#cv" class="hover:text-black transition">CV</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="max-w-4xl mx-auto px-6 py-20">
+        <h1 class="text-5xl font-bold mb-6 text-gray-900 leading-tight">
+            Transitioning rigorous data governance into <br>
+            <span class="text-stone-600">empirical AI Safety research.</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl leading-relaxed serif-text mb-8">
+            MSc Data Science Candidate & Product Technologist. Leveraging techniques in 
+            <span class="font-semibold text-gray-800">Causal Inference</span> and <span class="font-semibold text-gray-800">Legal AI Alignment</span> 
+            to ensure advanced systems remain robust, interpretable, and safe in high-stakes environments.
+        </p>
+        <div class="flex gap-4">
+            <a href="#research" class="bg-black text-white px-6 py-3 rounded-md font-medium hover:bg-gray-800 transition">
+                View Technical Projects
+            </a>
+            <!-- Updated GitHub Link -->
+            <a href="https://github.com/giftwarieta/Loan-Prediction-Project/tree/ochade_updates" target="_blank" class="border border-gray-300 px-6 py-3 rounded-md font-medium hover:bg-gray-50 transition flex items-center gap-2">
+                <i class="fab fa-github"></i> GitHub Profile
+            </a>
+        </div>
+    </header>
+
+    <!-- About / Mission Alignment -->
+    <section id="about" class="bg-stone-50 py-20 border-y border-stone-200">
+        <div class="max-w-4xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="text-sm font-bold uppercase tracking-widest text-gray-500 mb-4">Focus Areas</h2>
+                <ul class="space-y-2 text-sm font-medium">
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Causal Inference (EconML)</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Double Machine Learning</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Legal AI Safety</li>
+                    <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Data Governance</li>
+                </ul>
+            </div>
+            <div class="md:col-span-2">
+                <h2 class="text-2xl font-bold mb-4">Why AI Safety?</h2>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    My background in Fintech operations (Bankly) taught me that a "99% accurate" system is a failure if the 1% error destroys trust or causes financial ruin. I am now applying this rigorous, zero-failure mindset to AI.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    I am specifically interested in <strong>AI Safety in Law and Intellectual Property</strong>. As we deploy agents to interpret legal frameworks, ensuring they do not "hallucinate" laws or exploit loopholes is a critical alignment problem. I aim to research how we can use <strong>Steerability</strong> and <strong>Constitutional AI</strong> principles to make legal agents safe for under-represented jurisdictions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Research Section -->
+    <section id="research" class="max-w-4xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold mb-10">MSc Technical Projects</h2>
+        
+        <div class="grid gap-8">
+            <!-- Project 1: Causal Forest (The Star Project) -->
+            <div class="project-card border border-gray-200 rounded-lg p-8 bg-white transition duration-300 relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-blue-100 text-blue-800 text-xs font-bold px-3 py-1 rounded-bl-lg">Lead Researcher</div>
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-bold text-gray-900">Causal Forest DML for Healthcare Policy</h3>
+                    <span class="text-xs font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded self-start mt-2 md:mt-0">Python (EconML, Scikit-Learn)</span>
+                </div>
+                <p class="text-gray-600 mb-6 leading-relaxed text-sm">
+                    Investigated the Heterogeneous Treatment Effects (HTE) of mHealth adoption on maternal outcomes using a high-fidelity synthetic dataset (N=5,000) modeled on the NDHS 2023-2024.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                    <li><strong class="text-gray-800">Double Machine Learning (DML):</strong> Implemented orthogonalization to isolate treatment effects from socioeconomic "noise" (confounders).</li>
+                    <li><strong class="text-gray-800">Honest Estimation:</strong> Utilized sample splitting to prevent the model from "memorizing" noise, a key technique for robust model generalization.</li>
+                    <li><strong class="text-gray-800">Dominant Strategy:</strong> Proved intervention viability using Incremental Cost-Effectiveness Ratio (ICER) analysis.</li>
+                </ul>
+                <div class="flex gap-4 text-sm font-medium border-t border-gray-100 pt-4">
+                    <span class="text-gray-400 text-xs uppercase tracking-wide">Research Project</span>
+                </div>
+            </div>
+
+            <!-- Project 2: Credit Risk (The Team Project) -->
+            <div class="project-card border border-gray-200 rounded-lg p-8 bg-white transition duration-300">
+                <div class="flex flex-col md:flex-row justify-between mb-4">
+                    <h3 class="text-xl font-bold text-gray-900">Credit Risk Prediction Engine</h3>
+                    <span class="text-xs font-mono bg-blue-50 text-blue-700 px-2 py-1 rounded self-start mt-2 md:mt-0">Python (Pandas, Scikit-Learn)</span>
+                </div>
+                <p class="text-gray-600 mb-6 leading-relaxed text-sm">
+                    Developed a loan prediction application to assess credit risk in high-uncertainty financial environments. As a core technical contributor, I managed the data engineering pipeline.
+                </p>
+                <ul class="text-sm text-gray-600 space-y-2 mb-6">
+                    <li><strong class="text-gray-800">Data Engineering:</strong> Led the preprocessing of raw financial data, handling missing values and outlier detection to ensure input quality.</li>
+                    <li><strong class="text-gray-800">Feature Engineering:</strong> Structured unstructured data points to improve model interpretability and recall.</li>
+                </ul>
+                <div class="flex gap-4 text-sm font-medium border-t border-gray-100 pt-4">
+                    <span class="text-gray-500"><i class="fas fa-users mr-1"></i> Team Contributor</span>
+                    <!-- Updated Link Below -->
+                    <a href="https://github.com/giftwarieta/Loan-Prediction-Project/tree/ochade_updates" target="_blank" class="text-blue-600 hover:underline">View Code <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Research Focus (The Adora / IPP Tool) -->
+    <section id="current-work" class="bg-gray-900 text-white py-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8">Current Research: AI Safety in Legal Governance</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-xl font-bold text-teal-400 mb-4">Adora (IPP Co-pilot)</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        I am currently building a prototype for <strong>Intellectual Property Protection (IPP)</strong> in emerging markets. This project serves as a testbed for <strong>AI Safety</strong> principles in the legal domain.
+                    </p>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Legal AI has a "zero-tolerance" requirement for hallucination. My research explores how to use <strong>Structured Output (JSON schemas)</strong> and <strong>Retrieval-Augmented Generation (RAG)</strong> to constrain Large Language Models (LLMs) to strictly adhere to regional IP laws (e.g., Nigeria, Kenya) without fabricating statutes.
+                    </p>
+                    
+                    <!-- Added Prototype Link Here -->
+                    <a href="https://ip-shield-ai--ochadeudome.replit.app/" target="_blank" class="inline-flex items-center gap-2 bg-teal-500 text-gray-900 px-5 py-2.5 rounded font-bold hover:bg-teal-400 transition">
+                        <i class="fas fa-play"></i> View Live Prototype
+                    </a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg border border-gray-700">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-4">Research Questions</h4>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-shield-alt text-teal-500 mt-1"></i>
+                            <span><strong>Robustness:</strong> How do we ensure legal agents remain robust against adversarial inputs in contract negotiation?</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-balance-scale text-teal-500 mt-1"></i>
+                            <span><strong>Alignment:</strong> How do we align an AI's advice with the "spirit of the law" vs. just the letter, to protect vulnerable creators?</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-search text-teal-500 mt-1"></i>
+                            <span><strong>Interpretability:</strong> Can we trace an AI's legal advice back to the specific statute or precedent it used?</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Experience & Skills Section -->
+    <section id="cv" class="bg-stone-50 py-20 border-t border-stone-200">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-10">Professional Experience & Skills</h2>
+
+            <div class="space-y-12">
+                <!-- Professional Experience -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Technical Experience</h3>
+                    <div class="border-l-2 border-gray-200 pl-6 space-y-8">
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <h4 class="font-bold text-lg">Product Operations (Data & Strategy Lead)</h4>
+                                <span class="text-sm text-gray-500 font-mono">2023 - Present</span>
+                            </div>
+                            <div class="text-gray-600 font-medium mb-2">Bankly | Lagos, Nigeria</div>
+                            <ul class="list-disc list-inside text-gray-600 text-sm space-y-2">
+                                <li><strong>Data Modeling:</strong> Championed the integration of data modeling by building product data models from scratch to establish the foundation for performance analysis.</li>
+                                <li><strong>Growth Analytics:</strong> Analyzed competitor data across 3 geographical locations using Power BI and Mixpanel, guiding a pricing strategy that led to over 25% revenue growth.</li>
+                                <li><strong>Governance:</strong> Developed SOPs for internal processes and data management, reducing process errors by 20% and bolstering compliance.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <h4 class="font-bold text-lg">Project Coordinator</h4>
+                                <span class="text-sm text-gray-500 font-mono">2023</span>
+                            </div>
+                            <div class="text-gray-600 font-medium mb-2">Exolve Technologies | Nigeria</div>
+                            <ul class="list-disc list-inside text-gray-600 text-sm space-y-2">
+                                <li><strong>Optimization:</strong> Improved conversion rates by 25% through funnel analysis and targeted optimizations using Mixpanel.</li>
+                                <li><strong>Platform Launch:</strong> Led a technical team of five to develop and launch a new SME resource platform.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-baseline">
+                                <h4 class="font-bold text-lg">Software Engineering Intern</h4>
+                                <span class="text-sm text-gray-500 font-mono">2021</span>
+                            </div>
+                            <div class="text-gray-600 font-medium mb-2">Qucoon Limited | Lagos, Nigeria</div>
+                            <ul class="list-disc list-inside text-gray-600 text-sm space-y-2">
+                                <li><strong>API Development:</strong> Built API solutions and established database connections using Kotlin and MySQL.</li>
+                                <li><strong>Automation:</strong> Leveraged web scraping to enhance research speed by 30%.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Technical Skills</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-5 rounded border border-gray-200">
+                            <div class="font-bold text-gray-900 mb-1">Data Science & ML</div>
+                            <div class="text-sm text-gray-600">Python (Pandas, NumPy, Scikit-learn), Causal Inference (EconML), Statistical Modeling</div>
+                        </div>
+                        <div class="bg-white p-5 rounded border border-gray-200">
+                            <div class="font-bold text-gray-900 mb-1">Data Engineering</div>
+                            <div class="text-sm text-gray-600">SQL (MySQL), Data Preprocessing, ETL Pipelines, Web Scraping</div>
+                        </div>
+                        <div class="bg-white p-5 rounded border border-gray-200">
+                            <div class="font-bold text-gray-900 mb-1">Visualization & BI</div>
+                            <div class="text-sm text-gray-600">Power BI (Microsoft Certified), Mixpanel, Excel (Advanced), Dashboarding</div>
+                        </div>
+                        <div class="bg-white p-5 rounded border border-gray-200">
+                            <div class="font-bold text-gray-900 mb-1">Product & Process</div>
+                            <div class="text-sm text-gray-600">Agile/Scrum, Jira, Trello, UML Diagramming, UAT Testing</div>
+                        </div>
+                        <div class="bg-white p-5 rounded border border-gray-200">
+                            <div class="font-bold text-gray-900 mb-1">Software Dev</div>
+                            <div class="text-sm text-gray-600">Kotlin, HTML/CSS, Database Management</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Education (Brief) -->
+                <div>
+                    <h3 class="text-sm font-bold uppercase tracking-widest text-gray-400 mb-6">Education</h3>
+                     <div class="border-l-2 border-gray-200 pl-6 space-y-4">
+                        <div>
+                            <div class="font-bold text-lg">MSc Data Science <span class="text-sm font-normal text-gray-500 ml-2">(Expected 2026)</span></div>
+                            <div class="text-gray-600 text-sm">Pan-Atlantic University</div>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg">BSc Software Engineering <span class="text-sm font-normal text-gray-500 ml-2">(2022)</span></div>
+                            <div class="text-gray-600 text-sm">Babcock University</div>
+                        </div>
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-6 py-12 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Ochade Udome-Onyesom. Built for Anthropic Fellowship Application.</p>
+        <div class="mt-4 space-x-4">
+            <a href="https://linkedin.com/in/yourprofile" class="hover:text-black">LinkedIn</a>
+            <a href="https://github.com/giftwarieta/Loan-Prediction-Project/tree/ochade_updates" class="hover:text-black">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>
